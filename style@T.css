@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 0 1rem rgba(0,0,0,1);
+}
+.container img{
+    width: auto;
+    height: 100%;
+}
+.text{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.1);
+}
+.text div{
+    width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+    font-family: Roboto;
+}
+.number{
+    color:#fff;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 50%;
+}
+.quest{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+.options{
+    padding-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.options button{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    margin-bottom: 2vw;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(0,0,0,0.7);
+    cursor: pointer;
+    color:#fff;
+}
+.a h2{
+    font-size:17px;
+}
+.tillnow{
+    width:initial;
+    padding: 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7px;
+}
+.tillnow p button{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.7);
+    color:#fff;
+    border: none;
+}
+.b:hover{
+    cursor: pointer;
+}
+.topic{
+    width: 60%;
+    height: auto;
+    background-color: #ffffff34;
+    border-radius: 20px;
+    color:rgb(10, 16, 13);
+    line-height: 1.5rem;
+    font-family: Roboto;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.complete{
+    text-align: center;
+    padding: 15px;
+    color:rgb(84, 11, 14);
+}
+.end{
+    padding-bottom: 15px;
+}
+.end button{
+    padding: 10px 25px;
+    border-radius: 14px;
+    border-style: none;
+    background-color: rgb(84,11,14);
+}
+.end button a{
+    text-decoration: none;
+    color: rgb(224,159,62);
+    font-family: Roboto;
+    font-size: 1rem;
+}
+.end button a:hover{
+    color:rgb(10, 16, 13) ;
+}
+button{
+    overflow: hidden;
+}
+@media(max-width: 1000px){
+    .quest{
+        font-size: 26px;
+    }
+    .options button h2{
+        font-size: 15px;
+    }
+}
+@media(max-width: 768px){
+    .container img{
+        display: none;
+    }
+    .quest{
+        font-size: 26px;
+    }
+    .options button{
+        padding: 14px 24px; 
+    }
+    .options button h2{
+        font-size: 15px;
+    }
+}
+@media(max-width: 659px){
+    .complete h1{
+        line-height: 2rem;
+        font-size: 1.9rem;
+    }
+}
+@media(max-width: 500px){
+    .complete h1{
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+    .text{
+        background-color: rgba(255,255,255,0.2);
+    }
+    .number{
+        font-size: 16px;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+    }
+    .quest{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .options{
+        display: block;
+    }
+    .options button{
+        padding: 10px 20px;
+        width: 100%;
+    }
+    .options button h2{
+        font-size: 14px;
+    }
+    .tillnow p{
+        font-size: 12px;
+    }
+}
+@media(max-width: 350px){
+    .complete h1{
+        font-size: 1.5rem;
+    }
+    .complete{
+        padding: 10px;
+    }
+    .z{
+        font-size: 13px;
+    }
+    .end{
+        padding-bottom:  10px;
+    }
+    .end button{
+        padding: 8px 18px;
+    }
+    .end button a{
+        font-size: 14px;
+    }
+}
